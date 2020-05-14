@@ -7,7 +7,7 @@ public class UseTreeMap {
         String[] myString = str.split("\\s");
 
         for (int i = 0; i < myString.length; i++) {
-            String myWord = String.valueOf(myString[i]);
+            String myWord = String.valueOf(myString[i]).toUpperCase();
             if (myTreeMap.containsKey(myWord)) {
                 myTreeMap.put(myWord, myTreeMap.get(myWord) + 1);
             } else {
